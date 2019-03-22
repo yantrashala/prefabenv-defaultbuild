@@ -1,0 +1,6 @@
+JENKINS_PORT:
+  default: 8080
+  prompt: "Jenkins port"
+ADMIN_PASSWORD:
+  default: admin
+  prompt: "Admin password"
