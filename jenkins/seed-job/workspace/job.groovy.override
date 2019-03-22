@@ -30,8 +30,8 @@ projectDefinitions.each { projectDefinition ->
     multibranchPipelineJob(projectDefinition.project) {
         branchSources {
             git {
-                //remote('{{.CONFIG.PACKAGE_NAME}}')
-                //remote('{{.PROJECT_NAME}}')
+                //remote('{ {.CONFIG.PACKAGE_NAME} }')
+                //remote('{ {.PROJECT_NAME} }')
                 remote('https://github.com/yantrashala/prefab-spring-boot.git')
                 //credentialsId('gitlab-key')
                 includes(projectDefinition.branches)
