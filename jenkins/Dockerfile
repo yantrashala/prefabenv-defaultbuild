@@ -49,5 +49,4 @@ COPY compute-seed-job-hash.sh /tmp/
 # Pre-approve the seed job
 RUN /tmp/compute-seed-job-hash.sh /usr/share/jenkins/ref/jobs/seed-job/workspace/job.groovy.override /usr/share/jenkins/ref/scriptApproval.xml.override
 
-# cd64238eed814dd4a7e573e88ddd2a98
-# curl -s -k "http://admin:f428e122f5e1411bb766fece8e2001f2@localhost:8080/pluginManager/api/json?depth=1" | jq -r '.plugins[].shortName' | tee plugins.txt
+# curl -s -k "http://admin:admin@localhost:8080/pluginManager/api/json?depth=1" | jq -r '.plugins[].shortName' | tee plugins.txt
